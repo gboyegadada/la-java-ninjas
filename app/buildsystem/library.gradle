@@ -1,0 +1,17 @@
+ext.version = [
+        support: "25.2.0",
+        volley : "1.0.0"
+
+        // rest of libraries
+]
+
+def version = ext.version;
+
+ext.library = [
+        volley        :
+                "com.android.volley:volley:${version.volley}",
+        support_compat:
+                "com.android.support:appcompat-v7:${version.support}"
+
+        // rest of libraries
+]
