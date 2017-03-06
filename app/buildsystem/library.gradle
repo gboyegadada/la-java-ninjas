@@ -1,6 +1,8 @@
 ext.version = [
-        support: "25.2.0",
-        volley : "1.0.0"
+        support             : "25.2.0",
+        volley              : "1.0.0",
+        parceler            : "1.1.6",
+        annotation_processor: "1.1.6"
 
         // rest of libraries
 ]
@@ -11,7 +13,12 @@ ext.library = [
         volley        :
                 "com.android.volley:volley:${version.volley}",
         support_compat:
-                "com.android.support:appcompat-v7:${version.support}"
+                "com.android.support:appcompat-v7:${version.support}",
+        parceler      :
+                "org.parceler:parceler-api:${version.parceler}",
+
+        annotation_processor:
+                "org.parceler:parceler:${version.annotation_processor}"
 
         // rest of libraries
 ]

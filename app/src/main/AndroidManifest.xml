@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fpplabs.gboyegadada.javaninjasla">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
+        android:name=".AppController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,7 +15,7 @@
             android:name=".SplashActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -23,6 +25,11 @@
         <!-- 2. Main Activity (List of GitHub users) -->
         <activity
             android:name=".MainActivity"
+            android:label="@string/app_name"></activity>
+
+        <!-- 3. Profile Activity (GitHub Profile) -->
+        <activity
+            android:name=".ProfileActivity"
             android:label="@string/app_name"></activity>
 
     </application>

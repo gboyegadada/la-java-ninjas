@@ -41,5 +41,7 @@ dependencies {
     })
     compile "${library.support_compat}"
     compile   "${library.volley}"
+    compile "${library.parceler}"
+    annotationProcessor "${library.annotation_processor}"
     testCompile 'junit:junit:4.12'
 }
