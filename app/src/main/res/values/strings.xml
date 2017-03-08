@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Java Ninjas LA</string>
+    <string name="activity_title_profile">GitHub Profile</string>
+    <string name="share_button_text">SHARE</string>
 </resources>

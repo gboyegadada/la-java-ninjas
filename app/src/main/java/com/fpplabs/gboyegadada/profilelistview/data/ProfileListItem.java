@@ -9,7 +9,7 @@ import org.parceler.Parcel;
 @Parcel
 public class ProfileListItem {
     private int id;
-    private String name, handle, profilePic, url;
+    public String name, handle, profilePic, url;
 
     public ProfileListItem() {
     }

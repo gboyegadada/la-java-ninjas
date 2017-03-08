@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
 
                 // brings up the second activity
                 startActivity(i);
-                // overridePendingTransition(R.anim.pull_in_left, R.anim.push_out_right);
+                overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
             }
         });
 
@@ -147,6 +147,7 @@ public class MainActivity extends Activity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }

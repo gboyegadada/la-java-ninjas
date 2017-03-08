@@ -2,18 +2,40 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/feed_item_bg">
 
     <com.android.volley.toolbox.NetworkImageView
         android:id="@+id/profile_avatar"
-        android:layout_width="@dimen/profile_pic_width_height"
-        android:layout_height="@dimen/profile_pic_width_height"
-        android:scaleType="fitCenter"></com.android.volley.toolbox.NetworkImageView>
+        android:layout_width="@dimen/profile_pic_width_height_lg"
+        android:layout_height="@dimen/profile_pic_width_height_lg"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal">
+    </com.android.volley.toolbox.NetworkImageView>
 
     <TextView
         android:id="@+id/profile_name"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/profile_activity_name"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/profile_url"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/profile_activity_url"
+        android:textStyle="normal"/>
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/share_button_text"/>
+
 
 
 </LinearLayout>
