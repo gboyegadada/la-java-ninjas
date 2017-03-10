@@ -19,6 +19,8 @@ import org.parceler.Parcels;
 import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -37,7 +39,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
  * Created by Gboyega.Dada on 3/4/2017.
  */
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     private ListView listView;
     private ProfileListAdapter listAdapter;
@@ -48,6 +50,12 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Find the toolbar view inside the activity layout
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        // Sets the Toolbar to act as the ActionBar for this Activity window.
+        // Make sure the toolbar exists in the activity and is not null
+        setSupportActionBar(toolbar);
 
         listView = (ListView) findViewById(R.id.list);
         listView.setItemsCanFocus(true);
